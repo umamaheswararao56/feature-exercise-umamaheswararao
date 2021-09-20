@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=0);
 use \PHPUnit\Framework\TestCase;
 use Source\Sdk;
 
@@ -33,11 +32,10 @@ class SdkTest extends TestCase
             ["E", 10, 2],
             ["E", 15, 3],
         ];
-        $this->assert('');
     }
 
     /**
-     * To Get Final Price Of Item
+     * Final SDK Price Calculation
      * @dataProvider testProvider
      */
     public function testCalculatePrice(string $ItemName, $ExpectedPrice, $ItemUnit, $TotalQuantityItemA = NULL): void
